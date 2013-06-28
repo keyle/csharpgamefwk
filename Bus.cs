@@ -1,5 +1,14 @@
 namespace keyle
 {
+    /** Usage
+     * 
+     * where listening:
+     * Bus<UnitAddedMessage>.Register(this); // in an IBussable entity
+     * 
+     * where sending:
+     * Bus<UnitAddedMessage>.Broadcast(new UnitAddedMessage());
+     * 
+     **/
     public class Bus<T>
         where T : class
     {
